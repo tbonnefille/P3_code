@@ -254,13 +254,23 @@ footer{
 }
 
 
+.shortline{
+    position: relative;
+    margin-bottom: 15%;
 
-.menu{
+    .shortline__line{
 
-    display: flex;
-    flex-direction: column;
-    
+    border-bottom: 4px solid $tertiary;
+    position: absolute;
+    left: 0;
+    right: 80%;
+
+    }
+
+
+
 }
+
 
 
 

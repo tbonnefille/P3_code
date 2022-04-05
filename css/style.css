@@ -155,9 +155,15 @@ footer {
   padding: 5%;
 }
 
-.menu {
-  display: flex;
-  flex-direction: column;
+.shortline {
+  position: relative;
+  margin-bottom: 15%;
+}
+.shortline .shortline__line {
+  border-bottom: 4px solid #99E2D0;
+  position: absolute;
+  left: 0;
+  right: 80%;
 }
 
 .menu-card {
