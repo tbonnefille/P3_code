@@ -1,3 +1,107 @@
-body{
-    background-color: bisque;
+
+main{
+
+    background-color: #f4f4f4;
 }
+
+
+
+#restos{
+
+    padding: 5%;
+
+    #restos-container{
+
+        display: flex;
+        flex-direction: column;
+    
+        .restos-card{
+
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;        
+            height: 300px;
+            margin-bottom: 5%;
+        
+            .restos-card__img{
+
+                object-fit: cover;
+                height: 80%;
+                overflow: hidden;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            
+            } 
+            .restos-card__body{
+            
+            
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                justify-items: center;
+
+
+                .restos-card__title{
+
+                    margin-bottom: 0%;
+                }
+                                                        
+                
+                .restos-card__heart{
+                
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 5%;
+                }
+            
+                
+            }
+            
+                
+        }
+
+
+
+
+    }
+    
+    
+    
+   
+        
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
