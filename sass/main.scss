@@ -110,11 +110,42 @@ a {
     padding: 5%;
 }
 
+#city {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    background-color: lightgray;
+    height: 50px;
+}
+
+#posico {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+    
+}
+
+#input-txt {
+   
+    height: 50px;
+   background-color:lightgray;
+  
+   
+}
 
 
 main{
 
     background-color: $grey;
+    
 }
 
 
@@ -126,6 +157,7 @@ main{
     text-align: center;
     margin-bottom: 10%;
     padding: 5%;
+    margin-top: 80px;
 }
 
 
