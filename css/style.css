@@ -177,6 +177,23 @@ main {
 footer {
   background-color: black;
   color: white;
+  margin: 0%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+footer ul {
+  padding-left: 5%;
+}
+
+footer ul li {
+  margin-bottom: 3%;
+}
+
+.foot-ul__li {
+  padding-right: 3%;
 }
 
 .banner {

@@ -44,7 +44,7 @@ $secondary:#FF79DA;
 $tertiary:#99E2D0;
 $grey:#f4f4f4;
 $box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.1);
-
+$padding: 5%;
 
 
 
@@ -299,11 +299,26 @@ footer{
 
     background-color: black;
     color: white;
+    margin: 0%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
+footer ul{
 
+    padding-left: 5%;
+}
 
+footer ul li {
+    margin-bottom: 3%;
+}
 
+.foot-ul__li{
+
+    padding-right: 3%;
+}
 
 .banner{
 
