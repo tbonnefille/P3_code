@@ -14,16 +14,20 @@
     color: #FFFFFF;
     width: 200px;
     text-shadow: 1px 1px 0px #FFFFFF;
-    box-shadow: 2px 8px 3px #F3C7FC;
+    box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.1);
     padding: 15px 10px;
     border-radius: 30px;
     border: 2px solid #9356DC;
-    background: #9356DC;
-    background: linear-gradient(to top, #9356DC, #FF79DA);
+    background-color: #9356DC;
+    
     text-align: center;
     justify-content: center;
 
+    &:hover{
 
+        background-color: lighten($color: #9356DC, $amount: 4);
+        box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.3);
+    }
 
 
   }
