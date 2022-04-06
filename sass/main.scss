@@ -95,7 +95,7 @@ a {
 
 
 
-#logo{
+.logo{
 
     
     text-align: center;
@@ -104,7 +104,7 @@ a {
 
 }
 
-#logo-txt{
+.logo-txt{
 
     margin: 0%;
     padding: 5%;
@@ -322,13 +322,22 @@ footer ul li {
 
 .banner{
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: white;
+    text-align: center;
+    height: 50px;
 }
 
+.index-arrow{
 
+    
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10.242px;
+    left: 5px;
+}
 
 .title__card{
 
@@ -336,6 +345,7 @@ footer ul li {
     display: flex;
     flex-direction: column;
     background-color: $grey;
+    margin-top: 21px;
 
 
     .title__img{

@@ -49,13 +49,13 @@ a {
   color: black;
 }
 
-#logo {
+.logo {
   text-align: center;
   height: 50px;
   margin-bottom: 5%;
 }
 
-#logo-txt {
+.logo-txt {
   margin: 0%;
   padding: 5%;
 }
@@ -196,16 +196,26 @@ footer ul li {
 }
 
 .banner {
+  text-align: center;
+  height: 50px;
+}
+
+.index-arrow {
+  width: 50px;
+  height: 50px;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  background-color: white;
+  position: absolute;
+  top: 10.242px;
+  left: 5px;
 }
 
 .title__card {
   display: flex;
   flex-direction: column;
   background-color: #f4f4f4;
+  margin-top: 21px;
 }
 .title__card .title__img {
   object-fit: cover;
