@@ -174,25 +174,27 @@ main {
 }
 
 footer {
-  background-color: black;
+  background-color: #393e41;
   color: white;
   margin: 0%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: flex-start;
+  padding-bottom: 50px;
 }
 
 footer ul {
   padding-left: 5%;
+  margin: 0%;
 }
 
 footer ul li {
-  margin-bottom: 3%;
+  margin-bottom: 5px;
 }
 
 .foot-ul__li {
-  padding-right: 3%;
+  padding-right: 10px;
 }
 
 .banner {
