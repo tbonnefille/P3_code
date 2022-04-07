@@ -249,7 +249,11 @@ footer ul li {
   border-bottom: 4px solid #99E2D0;
   position: absolute;
   left: 0;
-  right: 80%;
+  right: 85%;
+}
+
+.menu-title {
+  margin-bottom: 5px;
 }
 
 .menu-card {
