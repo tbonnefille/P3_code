@@ -175,6 +175,9 @@ main {
 #restos #restos-container .restos-card .restos-card__body .restos-card__title {
   margin-bottom: 0%;
 }
+#restos #restos-container .restos-card .restos-card__body .restos-card__site {
+  margin-top: 2%;
+}
 #restos #restos-container .restos-card .restos-card__body .restos-card__heart {
   display: flex;
   justify-content: center;

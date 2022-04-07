@@ -269,7 +269,12 @@ main{
 
                     margin-bottom: 0%;
                 }
-                                                        
+                     
+                .restos-card__site{
+
+                    margin-top: 2%;
+                }
+
                 
                 .restos-card__heart{
                 
@@ -277,7 +282,7 @@ main{
                     justify-content: center;
                     align-items: center;
                     
-                    padding: 5%;
+                    padding: $padding;
                     
                 }
             
