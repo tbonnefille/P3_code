@@ -183,6 +183,20 @@ main {
   justify-content: center;
   align-items: center;
   padding: 5%;
+  color: white;
+  background-color: cadetblue;
+}
+#restos #restos-container .restos-card .restos-card__body .restos-card__heart:hover {
+  animation: restos-heart-fill 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes restos-heart-fill {
+  from {
+    color: white;
+  }
+  to {
+    color: #FF79DA;
+  }
 }
 
 footer {

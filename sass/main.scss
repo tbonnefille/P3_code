@@ -11,10 +11,6 @@
 
 
 
-
-
-
-
 @font-face {  
 
 
@@ -281,9 +277,34 @@ main{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    
                     padding: $padding;
-                    
+
+                    color: lighten($color: $secondary, $amount: 100);
+                    background-color: cadetblue;
+
+               
+
+
+
+
+
+                    &:hover{
+
+                        animation: restos-heart-fill 3s;
+                        animation-fill-mode: forwards;
+                       
+
+
+
+                    }
+
+
+                    @keyframes restos-heart-fill {
+                        from {color: lighten($color: $secondary, $amount: 100);}
+                        to { color: $secondary;}
+                      }
+
+
                 }
             
                 
