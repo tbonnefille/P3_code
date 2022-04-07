@@ -128,17 +128,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
-    
-    
+           
 }
 
 #input-txt {
    
     height: 50px;
    background-color:lightgray;
-  
-   
 }
 
 
@@ -191,7 +187,7 @@ main{
 
         &:hover{
 
-            background-color: $secondary;
+            background-color: lighten($color: $primary, $amount: 35);
         }
 
 
