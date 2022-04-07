@@ -65,6 +65,7 @@ $padding: 5%;
 body{
     
     font-family: 'Roboto', sans-serif;
+    background-color: $grey;
 
 }
 
@@ -92,7 +93,10 @@ a {
     color: black;
 }
 
+header{
 
+    background-color: white;
+}
 
 
 .logo{
@@ -140,10 +144,8 @@ a {
 
 main{
 
-    background-color: $grey;
-    
+    margin-bottom: 50px;
 }
-
 
 
 
@@ -172,6 +174,7 @@ main{
     flex-direction: column;
     justify-content: space-between;
     height: 300px;
+    margin-bottom: 50px;
 
     
     .tuto{
@@ -298,12 +301,12 @@ footer{
 
     background-color: #393e41;
     color: white;
-    margin: 0%;
+   
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: flex-start;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 footer ul{

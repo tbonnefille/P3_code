@@ -1,6 +1,8 @@
 .btn-box {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -31,6 +33,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
 }
 
 h1, .shrikhand {
@@ -47,6 +50,10 @@ a:link {
 
 a {
   color: black;
+}
+
+header {
+  background-color: white;
 }
 
 .logo {
@@ -82,7 +89,7 @@ a {
 }
 
 main {
-  background-color: #f4f4f4;
+  margin-bottom: 50px;
 }
 
 #explorer {
@@ -101,6 +108,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   height: 300px;
+  margin-bottom: 50px;
 }
 #tuto-container .tuto {
   display: flex;
@@ -177,12 +185,11 @@ main {
 footer {
   background-color: #393e41;
   color: white;
-  margin: 0%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: flex-start;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 footer ul {
