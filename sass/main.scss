@@ -442,13 +442,36 @@ box-shadow:$box-shadow;
 }
 
 
+.slide-check{
+
+    background-color: $tertiary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    animation-duration: 3s;
+    animation-name: slidein;
+   
+    
 
 
 
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 0%;
+
+     
 
 
-
-
-
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 20%;
+    }
+  }
 
 }

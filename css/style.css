@@ -282,5 +282,23 @@ footer ul li {
   align-items: flex-end;
   padding-right: 5%;
 }
+.menu-card .slide-check {
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 0%;
+  }
+  to {
+    margin-left: 0%;
+    width: 20%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
