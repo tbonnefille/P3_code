@@ -26,30 +26,12 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 $primary:#9356DC;
 $secondary:#FF79DA;
 $tertiary:#99E2D0;
 $grey:#f4f4f4;
 $box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.1);
 $padding: 5%;
-
-
-
-
-
-
-
-
-
 
 
 
@@ -69,14 +51,6 @@ h1, .shrikhand{
 
     font-family: 'Shrikhand', cursive;
 }
-
-
-
-
-
-
-
-
 
 ul {
     list-style-type: none;
@@ -145,7 +119,6 @@ main{
 
 
 
-
 #explorer{
 
     text-align: center;
@@ -161,7 +134,6 @@ main{
     padding: 5%;
 
 }
-
 
 
 #tuto-container{
@@ -203,21 +175,17 @@ main{
             border-radius: 50%;
             position: relative;
             right: 15px;
-            
-                                               
+                                                           
             }
-
 
             .tuto__ico{
 
                 color: grey;
                 padding: $padding;
-               
-              
+                             
             }
 
         .tuto__txt{
-
             
             padding-left: 10px;
         }
@@ -228,7 +196,7 @@ main{
 
 #restos{
 
-    padding: 5%;
+    padding: $padding;
 
     #restos-container{
 
@@ -256,14 +224,12 @@ main{
             } 
             .restos-card__body{
             
-            
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
                 justify-items: center;
                 padding-left: 5%;
-
 
                 .restos-card__title{
 
@@ -274,7 +240,6 @@ main{
 
                     margin-top: 2%;
                 }
-
                 
                 .restos-card__heart{
                 
@@ -282,56 +247,35 @@ main{
                     justify-content: center;
                     align-items: center;
                     padding: $padding;
-
                     color: lighten($color: $secondary, $amount: 100);
                     background-color: cadetblue;
 
-               
-
-
-
-
-
-                    &:hover{
+                        &:hover{
 
                         animation: restos-heart-fill 3s;
                         animation-fill-mode: forwards;
                        
-
-
-
                     }
 
 
                     @keyframes restos-heart-fill {
                         from {color: lighten($color: $secondary, $amount: 100);}
                         to { color: $secondary;}
-                      }
-
+                    }
 
                 }
             
-                
             }
-            
-                
+                            
         }
-
-
-
-
     }
-          
-               
-        
-
+                                
 }
 
 footer{
 
     background-color: #393e41;
     color: white;
-   
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -367,7 +311,6 @@ footer ul li {
 }
 
 .index-arrow{
-
     
     width: 50px;
     height: 50px;
@@ -381,7 +324,6 @@ footer ul li {
 
 .title__card{
 
-
     display: flex;
     flex-direction: column;
     background-color: $grey;
@@ -393,7 +335,6 @@ footer ul li {
         object-fit: cover;
         height: 300px;
       
-            
     }
 
 
@@ -409,21 +350,16 @@ footer ul li {
         flex-wrap: nowrap;
         justify-content: space-evenly;
         align-items: center;
-       
-        
+               
     }
 
-
 }
-
-
 
 
 .carte{
 
     padding: 3%;
 }
-
 
 .shortline{
     position: relative;
@@ -435,62 +371,46 @@ footer ul li {
     position: absolute;
     left: 0;
     right: 85%;
-
     }
-
-
 
 }
 
 .menu-title{
 
     margin-bottom: 5px;
-    
 }
-
 
 .menu-card{
 
     background-color: white;
-
     border-radius: 20px;
-padding-left: 3%;
-
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-
-margin-bottom: 5%;
-box-shadow:$box-shadow;
-
-
-.menu-card__price{
-
+    padding-left: 3%;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-right: 5%;
-}
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    box-shadow:$box-shadow;
 
 
-.slide-check{
+    .menu-card__price{
 
-    background-color: $tertiary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
-   
-    
-    animation-duration: 3s;
-    animation-name: slidein;
-   
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-right: 5%;
+    }
 
 
+    .slide-check{
 
+        background-color: $tertiary;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
 
-  }
   @keyframes slidein {
     from {
       margin-left: 100%;

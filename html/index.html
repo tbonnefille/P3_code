@@ -1,182 +1,182 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.0/css/all.css" integrity="sha384-eLT4eRYPHTmTsFGFAzjcCWX+wHfUInVWNm9YnwpiatljsZOwXtwV2Hh6sHM6zZD9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.0/css/all.css"
+        integrity="sha384-eLT4eRYPHTmTsFGFAzjcCWX+wHfUInVWNm9YnwpiatljsZOwXtwV2Hh6sHM6zZD9" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header>
-<div class="logo"><h1 class="logo-txt">ohmyfood</h1></div>
-<form method="post" action="traitement.php">
-    <div id="city">
-        <div id="posico">
-            <label for="input-txt"><i class="fas fa-map-marker-alt"></i></label>
+        <div class="logo">
+            <h1 class="logo-txt">ohmyfood</h1>
         </div>
-        <div>
-            <input id="input-txt" type="text" name="destination" placeholder="entrez votre destination"
-                value="   Paris, Belleville">
-        </div>
-       
-    </div>
-</form>
+        <form method="post" action="traitement.php">
+            <div id="city">
+                <div id="posico">
+                    <label for="input-txt"><i class="fas fa-map-marker-alt"></i></label>
+                </div>
+                <div>
+                    <input id="input-txt" type="text" name="destination" placeholder="entrez votre destination"
+                        value="   Paris, Belleville">
+                </div>
+
+            </div>
+        </form>
     </header>
 
 
-
-<main>
-
+    <main>
 
 
-<section id="explorer">
-    <h2>Réservez le menu qui vous convient</h2>
-    <p>Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
-    <div class="btn-box">
-        <div class="btn">Explorer nos restaurants</div>
-    </div>
-</section>
+        <section id="explorer">
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
+            <div class="btn-box">
+                <div class="btn">Explorer nos restaurants</div>
+            </div>
+
+        </section>
+
+        <section id="fonction">
+
+            <h2>Fonctionnement</h2>
+
+            <div id="tuto-container">
+
+                <article class="tuto">
+                    <div class="tuto__number">
+                        <p>1</p>
+                    </div>
+                    <div class="tuto__ico"><i class="fa-solid fa-mobile-screen-button fa-xl"></i></div>
+                    <div class="tuto__txt">
+                        <h3>Choisissez un restaurant</h3>
+                    </div>
+                </article>
 
 
+                <article class="tuto">
+                    <div class="tuto__number">
+                        <p>2</p>
+                    </div>
+                    <div class="tuto__ico"><i class="fa-solid fa-list fa-lg"></i></div>
+                    <div class="tuto__txt">
+                        <h3>Composez votre menu</h3>
+                    </div>
+                </article>
+
+                <article class="tuto">
+                    <div class="tuto__number">
+                        <p>3</p>
+                    </div>
+                    <div class="tuto__ico"><i class="fa-solid fa-store fa-lg"></i></div>
+                    <div class="tuto__txt">
+                        <h3>Dégustez au restaurant</h3>
+                    </div>
+                </article>
 
 
+            </div>
+
+        </section>
+
+        <section id="restos">
+            <h2>Restaurants</h2>
+
+            <div id="restos-container">
+
+                <a href="../html/resto1.html">
+                    <article class="restos-card">
+                        <img class="restos-card__img"
+                            src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                        <div class="restos-card__body">
+                            <div class="restos-card__txt">
+                                <h3 class="restos-card__title">La palette du goût</h3>
+                                <p class="restos-card__site">Ménilmontant</p>
+                            </div>
+                            <div class="restos-card__heart"><i class="fa-solid fa-heart fa-2x"></i></div>
+
+                        </div>
+
+                    </article>
+                </a>
+
+                <a href="../html/resto2.html">
+                    <article class="restos-card">
+                        <img class="restos-card__img" src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                        <div class="restos-card__body">
+
+                            <div class="restos-card__txt">
+                                <h3 class="restos-card__title">La note enchantée</h3>
+                                <p class="restos-card__site">Charonne</p>
+                            </div>
+                            <div class="restos-card__heart"><i class="fa-regular fa-heart fa-2x"></i></div>
+
+                        </div>
+                    </article>
+                </a>
+                <a href="../html/resto3.html">
+                    <article class="restos-card">
+                        <img class="restos-card__img" src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                            alt="">
+
+                        <div class="restos-card__body">
+                            <div class="restos-card__txt">
+                                <h3 class="restos-card__title">À la française</h3>
+                                <p class="restos-card__site">Cité Rouge</p>
+                            </div>
+                            <div class="restos-card__heart"><i class="fa-regular fa-heart fa-2x"></i></div>
+                        </div>
+
+                    </article>
+                </a>
+
+                <a href="../html/resto4.html">
+                    <article class="restos-card">
+                        <img class="restos-card__img"
+                            src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+
+                        <div class="restos-card__body">
+                            <div class="restos-card__txt">
+                                <h3 class="restos-card__title">Le délice des sens</h3>
+                                <p class="restos-card__site">Folie-Méricourt</p>
+                            </div>
+                            <div class="restos-card__heart"><i class="fa-regular fa-heart fa-2x"></i></div>
+                        </div>
+                    </article>
+                </a>
+
+            </div>
+
+        </section>
 
 
+    </main>
 
 
-<section id="fonction">
+    <footer>
 
-<h2>Fonctionnement</h2>
+        <ul>
+            <li>
+                <h3 class="shrikhand">ohmyfood</h3>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-utensils foot-ul__li"></i> Proposer un restaurant</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake-angle foot-ul__li"></i>Devenir partenaire</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="mailto:email@example.com">Contact</a></li>
 
-<div id="tuto-container">
+        </ul>
 
-<article class="tuto">
-    <div class="tuto__number"><p>1</p></div>
-    <div class="tuto__ico"><i class="fa-solid fa-mobile-screen-button fa-xl"></i></div>
-     <div class="tuto__txt">   <h3>Choisissez un restaurant</h3></div>
-</article>
-
-
-<article class="tuto">
-<div class="tuto__number"><p>2</p></div>
-<div class="tuto__ico"><i class="fa-solid fa-list fa-lg"></i></div>
-<div class="tuto__txt"><h3>Composez votre menu</h3></div>
-</article>
-
-<article class="tuto">
-    <div class="tuto__number"><p>3</p></div>
-<div class="tuto__ico"><i class="fa-solid fa-store fa-lg"></i></div>
-<div class="tuto__txt"><h3>Dégustez au restaurant</h3></div>
-</article>
-
-
-</div>
-
-
-
-
-</section>
-
-
-<section id="restos"> 
-<h2>Restaurants</h2>
-
-<div id="restos-container">
-<a href="../html/resto1.html">
-<article class="restos-card">
-    <img class="restos-card__img" src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-   
-   <div class="restos-card__body">
-   
-   
-   
-   
-   <div class="restos-card__txt">
-    <h3 class="restos-card__title">La palette du goût</h3>
-    <p class="restos-card__site">Ménilmontant</p>
-    </div>
-    <div class="restos-card__heart"><i class="fa-solid fa-heart fa-2x"></i></div>
-
-</div> 
-</article></a>
-<a href="../html/resto2.html">
-<article class="restos-card">
-<img class="restos-card__img" src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
-<div class="restos-card__body">
-
-<div class="restos-card__txt">
-    <h3 class="restos-card__title">La note enchantée</h3>
-    <p class="restos-card__site">Charonne</p>
-</div>
-<div class="restos-card__heart"><i class="fa-regular fa-heart fa-2x"></i></div>
-
-</div>
-</article>
-</a>
-<a href="../html/resto3.html">
-<article class="restos-card">
-    <img class="restos-card__img" src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
-
-    <div class="restos-card__body">
-    <div class="restos-card__txt">
-        <h3 class="restos-card__title">À la française</h3>
-        <p class="restos-card__site">Cité Rouge</p>
-</div>
-    <div class="restos-card__heart"><i class="fa-regular fa-heart fa-2x"></i></div>
-</div>
-
-</article>
-</a>
-
-<a href="../html/resto4.html">
-<article class="restos-card">
-    <img class="restos-card__img" src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
-
-    <div class="restos-card__body">
-  <div class="restos-card__txt"> 
-    <h3 class="restos-card__title">Le délice des sens</h3>
-    <p class="restos-card__site">Folie-Méricourt</p>
-</div>
-    <div class="restos-card__heart"><i class="fa-regular fa-heart fa-2x"></i></div>
-</div>
-</article>
-</a>
-
-</div>
-
-</section>
-
-
-</main>
-
-
-<footer>
-    
-<ul>
-    <li><h3 class="shrikhand">ohmyfood</h3></li>
-    <li><a href="#"><i class="fa-solid fa-utensils foot-ul__li"></i> Proposer un restaurant</a></li>
-    <li><a href="#"><i class="fa-solid fa-handshake-angle foot-ul__li"></i>Devenir partenaire</a></li>
-    <li><a href="#">Mentions légales</a></li>
-    <li><a href="mailto:email@example.com">Contact</a></li>
-    
-</ul>
-
-
-</footer>
-
-
-
-
-
-
-
-
+    </footer>
 
 
 </body>
