@@ -122,6 +122,9 @@ main {
 #tuto-container .tuto:hover {
   background-color: #f2eafb;
 }
+#tuto-container .tuto:hover .tuto__ico {
+  color: #9356DC;
+}
 #tuto-container .tuto .tuto__number {
   display: flex;
   justify-content: center;
@@ -132,13 +135,14 @@ main {
   height: 25px;
   border-radius: 50%;
   position: relative;
-  right: 10px;
+  right: 15px;
 }
 #tuto-container .tuto .tuto__ico {
   color: grey;
+  padding: 5%;
 }
-#tuto-container .tuto .tuto__ico:hover {
-  background-color: #9356DC;
+#tuto-container .tuto .tuto__txt {
+  padding-left: 10px;
 }
 
 #restos {
