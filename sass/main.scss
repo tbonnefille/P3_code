@@ -86,7 +86,7 @@ a:link {
 }
 
 a {
-    color: white;
+    color: black;
 }
 
 header{
@@ -333,6 +333,12 @@ footer{
     flex-direction: column;
     justify-content: flex-start;
     padding-bottom: 20px;
+}
+
+
+footer a{
+
+    color: white;
 }
 
 footer ul{
