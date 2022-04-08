@@ -86,7 +86,7 @@ a:link {
 }
 
 a {
-    color: black;
+    color: white;
 }
 
 header{
@@ -417,7 +417,7 @@ footer ul li {
 
 .shortline{
     position: relative;
-    margin-bottom: 15%;
+    margin-bottom: 30px;
 
     .shortline__line{
 
@@ -470,11 +470,13 @@ box-shadow:$box-shadow;
     justify-content: center;
     align-items: center;
     
+
+   
     
     animation-duration: 3s;
     animation-name: slidein;
    
-    
+
 
 
 

@@ -49,7 +49,7 @@ a:link {
 }
 
 a {
-  color: black;
+  color: white;
 }
 
 header {
@@ -267,7 +267,7 @@ footer ul li {
 
 .shortline {
   position: relative;
-  margin-bottom: 15%;
+  margin-bottom: 30px;
 }
 .shortline .shortline__line {
   border-bottom: 4px solid #99E2D0;
