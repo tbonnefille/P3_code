@@ -12,14 +12,14 @@
   box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.1);
   padding: 15px 10px;
   border-radius: 30px;
-  border: 2px solid #9356DC;
   background-color: #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
   text-align: center;
   justify-content: center;
 }
 .btn:hover {
-  background-color: #a16be0;
   box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
 }
 
 @font-face {
@@ -72,7 +72,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: lightgray;
+  background-color: lightgrey;
   height: 50px;
 }
 
@@ -81,11 +81,20 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left: 50px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  padding-left: 0px;
+  border: none;
 }
 
 #input-txt {
   height: 50px;
-  background-color: lightgray;
+  width: 200px;
+  background-color: lightgrey;
 }
 
 main {
@@ -261,12 +270,12 @@ footer ul li {
   border-top-right-radius: 20px;
   position: relative;
   top: -50px;
-  border: #9356DC solid;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
+  background-color: #f4f4f4;
 }
 
 .carte {
@@ -314,7 +323,7 @@ footer ul li {
 }
 @keyframes slidein {
   from {
-    margin-left: 100%;
+    margin-left: -1%;
     width: 0%;
   }
   to {

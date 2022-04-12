@@ -92,8 +92,15 @@ header{
     
     
     
-    background-color: lightgray;
+    background-color: lightgrey;
     height: 50px;
+    
+
+    
+    
+
+
+
 }
 
 #posico {
@@ -102,13 +109,26 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 50px;
            
 }
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    padding-left: 0px;
+    
+   
+    border: none;
+  }
+
 
 #input-txt {
    
     height: 50px;
-   background-color:lightgray;
+    width: 200px;
+   background-color:lightgrey;
+
 }
 
 
@@ -344,12 +364,12 @@ footer ul li {
         border-top-right-radius: 20px;
         position: relative;
         top: -50px;
-        border: #9356DC solid;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-evenly;
         align-items: center;
+        background-color: $grey;
                
     }
 
@@ -413,7 +433,7 @@ footer ul li {
 
   @keyframes slidein {
     from {
-      margin-left: 100%;
+      margin-left: -1%;
       width: 0%;
 
      

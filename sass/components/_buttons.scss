@@ -18,16 +18,17 @@
     box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.1);
     padding: 15px 10px;
     border-radius: 30px;
-    border: 2px solid #9356DC;
     background-color: #9356DC;
-    
+    background: linear-gradient(#FF79DA,#9356DC);
     text-align: center;
     justify-content: center;
 
     &:hover{
 
-        background-color: lighten($color: #9356DC, $amount: 5);
-        box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.3);
+    box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.3);
+    filter: brightness(1.1);
+
+
     }
 
 
