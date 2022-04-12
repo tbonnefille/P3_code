@@ -411,6 +411,8 @@ footer ul li {
     margin-bottom: 5%;
     box-shadow:$box-shadow;
 
+    animation: card-loading 4s;
+
 
     .menu-card__price{
 
@@ -448,39 +450,61 @@ footer ul li {
   }
 
 }
+
 .loading {
     display: flex;
     justify-content: center;
+
+ position: absolute;
+    top: 50%;
+    left: 30%;
   }
-
-
+  
   .loading--full-height {
     align-items: center;
     height: 100%;
+
+   
+    
+    
   }
-
-
-
-
-.loading::after {
+  
+  .loading::after {
     content: "";
-    width: 50px;
-    height: 50px;
-    border: 10px solid #dddddd;
-    border-top-color: #009579;
+    width: 150px;
+    height: 150px;
+    border: 10px solid $secondary;
+    border-top-color: $tertiary;
     border-radius: 50%;
     transform: rotate(0.16turn);
-    animation: loading 1s ease 3;
+    animation: loading 1s ease infinite;
   }
   
   @keyframes loading {
-    /* Safari support */
+   
     from {
       transform: rotate(0turn);
     }
     
     to {
       transform: rotate(1turn);
-      opacity: 0;
     }
+  }
+
+
+
+  @keyframes card-loading{
+
+from{
+
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+to {
+
+    opacity: 1;
+    transform: translateY(0);
+}
+
   }
