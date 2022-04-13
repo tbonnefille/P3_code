@@ -184,6 +184,7 @@ main {
   align-items: center;
   justify-items: center;
   padding-left: 5%;
+  padding-right: 5%;
 }
 #restos #restos-container .restos-card .restos-card__body .restos-card__title {
   margin-bottom: 0%;
@@ -191,25 +192,41 @@ main {
 #restos #restos-container .restos-card .restos-card__body .restos-card__site {
   margin-top: 2%;
 }
-#restos #restos-container .restos-card .restos-card__body .restos-card__heart {
-  display: flex;
+#restos #restos-container .restos-card .restos-card__heart {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: 5%;
-  color: white;
-  background-color: cadetblue;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-#restos #restos-container .restos-card .restos-card__body .restos-card__heart:hover {
-  animation: restos-heart-fill 3s;
-  animation-fill-mode: forwards;
+#restos #restos-container .restos-card .restos-card__heart .hearts {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@keyframes restos-heart-fill {
-  from {
-    color: white;
-  }
-  to {
-    color: #FF79DA;
-  }
+#restos #restos-container .restos-card .restos-card__heart i {
+  position: absolute;
+  display: block;
+}
+#restos #restos-container .restos-card .restos-card__heart .heart1 {
+  transition: opacity 0.3s, transform 1s;
+}
+#restos #restos-container .restos-card .restos-card__heart .heart2 {
+  transition: opacity 0.3s, transform 1s;
+  transform: scale(0.5);
+  opacity: 0;
+}
+#restos #restos-container .restos-card .restos-card__heart:hover .heart2 {
+  transform: scale(1);
+  opacity: 1;
+  color: #9356DC;
+}
+#restos #restos-container .restos-card .restos-card__heart:hover .heart1 {
+  transform: scale(0.5);
+  opacity: 0;
 }
 
 footer {
@@ -260,6 +277,7 @@ footer ul li {
   flex-direction: column;
   background-color: #f4f4f4;
   margin-top: 21px;
+  margin-bottom: -70px;
 }
 .title__card .title__img {
   object-fit: cover;
@@ -276,10 +294,12 @@ footer ul li {
   justify-content: space-evenly;
   align-items: center;
   background-color: #f4f4f4;
+  height: 100px;
 }
 
 .carte {
   padding: 3%;
+  animation: card-loading 4s;
 }
 
 .shortline {
@@ -306,7 +326,9 @@ footer ul li {
   justify-content: space-between;
   margin-bottom: 5%;
   box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.1);
-  animation: card-loading 4s;
+}
+.menu-card:hover > .menu-card__price {
+  transform: scalex(5);
 }
 .menu-card .menu-card__price {
   display: flex;
@@ -314,23 +336,16 @@ footer ul li {
   align-items: flex-end;
   padding-right: 5%;
 }
-.menu-card .slide-check {
+.menu-card .menu-card__price .slide-check {
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-@keyframes slidein {
-  from {
-    margin-left: -1%;
-    width: 0%;
-  }
-  to {
-    margin-left: 0%;
-    width: 20%;
-  }
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transform: scalex(0);
+  transition: transform 1s;
+  transform-origin: right 0;
 }
 
 .loading {

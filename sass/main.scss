@@ -250,6 +250,7 @@ main{
                 align-items: center;
                 justify-items: center;
                 padding-left: 5%;
+                padding-right: 5%;
 
                 .restos-card__title{
 
@@ -261,36 +262,90 @@ main{
                     margin-top: 2%;
                 }
                 
-                .restos-card__heart{
+               
+              }
+
+
+               .restos-card__heart{
                 
-                    display: flex;
+                display: inline-flex;
                     justify-content: center;
                     align-items: center;
                     padding: $padding;
-                    color: lighten($color: $secondary, $amount: 100);
-                    background-color: cadetblue;
 
-                        &:hover{
+                 
+	position: relative;
+  
+  	cursor: pointer;
 
-                        animation: restos-heart-fill 3s;
-                        animation-fill-mode: forwards;
+	
+	transition: all 0.3s ease;  
+
+
+
+
+
+                    .hearts {
+                        position: relative;
+                
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                
+                        
+                    }
+
+                    i {
+                        position: absolute;
                        
+            
+                        display: block;
                     }
-
-
-                    @keyframes restos-heart-fill {
-                        from {color: lighten($color: $secondary, $amount: 100);}
-                        to { color: $secondary;}
+                      
+                    .heart1 {
+                        transition: opacity .3s, transform 1s;
                     }
-
+            
+                    .heart2 {
+                        transition: opacity .3s, transform 1s;
+                        transform:  scale(.5);
+                        opacity: 0;
+                    }
+                
+            
+                &:hover {
+                    
+               
+                    .heart2 {
+                        transform: scale(1);
+                        opacity: 1;
+                        color: $primary;
+                        
+                    }
+                    .heart1 {
+                        transform: scale(.5);
+                 
+                        opacity: 0;
+                    }
                 }
+            } 
+                   
+
+
+
+
+
+
+
+
+                
             
             }
                             
         }
     }
                                 
-}
+
 
 footer{
 
@@ -348,6 +403,7 @@ footer ul li {
     flex-direction: column;
     background-color: $grey;
     margin-top: 21px;
+    margin-bottom: -70px;
 
 
     .title__img{
@@ -370,6 +426,7 @@ footer ul li {
         justify-content: space-evenly;
         align-items: center;
         background-color: $grey;
+        height: 100px;
                
     }
 
@@ -379,6 +436,7 @@ footer ul li {
 .carte{
 
     padding: 3%;
+    animation: card-loading 4s;
 }
 
 .shortline{
@@ -411,8 +469,14 @@ footer ul li {
     margin-bottom: 5%;
     box-shadow:$box-shadow;
 
-    animation: card-loading 4s;
+    
 
+    &:hover > .menu-card__price{
+
+        transform: scalex(5);
+        
+        
+    }
 
     .menu-card__price{
 
@@ -420,36 +484,29 @@ footer ul li {
         justify-content: center;
         align-items: flex-end;
         padding-right: 5%;
-    }
 
-
-    .slide-check{
+        .slide-check{
 
         background-color: $tertiary;
         display: flex;
         justify-content: center;
         align-items: center;  
-        animation-duration: 3s;
-        animation-name: slidein;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transform: scalex(0);
+        transition: transform 1s;
+        transform-origin: right 0;
+        
     }
 
-  @keyframes slidein {
-    from {
-      margin-left: -1%;
-      width: 0%;
-
-     
-
-
     }
-  
-    to {
-      margin-left: 0%;
-      width: 20%;
-    }
-  }
 
+
+   
+
+    
 }
+
 
 .loading {
     display: flex;
@@ -482,13 +539,17 @@ footer ul li {
   
   @keyframes loading {
    
-    from {
+   from {
       transform: rotate(0turn);
     }
     
     to {
       transform: rotate(1turn);
+      
     }
+
+
+
   }
 
 
@@ -507,4 +568,4 @@ to {
     transform: translateY(0);
 }
 
-  }
+}
