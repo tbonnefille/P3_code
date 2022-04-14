@@ -321,14 +321,27 @@ footer ul li {
   background-color: white;
   border-radius: 20px;
   padding-left: 3%;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 5%;
   box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.1);
+  flex-wrap: nowrap;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis " [..]";
+  transition-property: width;
+  transition-duration: 2s;
 }
-.menu-card:hover > .menu-card__price {
-  transform: scalex(5);
+.menu-card:hover .slide-check {
+  width: 45%;
+  height: 100%;
+}
+.menu-card .menu-card__txt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-card .menu-card__price {
   display: flex;
@@ -336,16 +349,17 @@ footer ul li {
   align-items: flex-end;
   padding-right: 5%;
 }
-.menu-card .menu-card__price .slide-check {
+.menu-card .slide-check {
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  transform: scalex(0);
-  transition: transform 1s;
-  transform-origin: right 0;
+  height: 100%;
+  width: 0%;
+  transition: 1s;
+}
+.menu-card .check-ico {
+  color: white;
 }
 
 .loading {

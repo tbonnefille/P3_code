@@ -463,20 +463,38 @@ footer ul li {
     background-color: white;
     border-radius: 20px;
     padding-left: 3%;
+
+    height: 100px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 5%;
     box-shadow:$box-shadow;
+flex-wrap: nowrap;
 
+
+    position: relative;
+    overflow: hidden;
     
 
-    &:hover > .menu-card__price{
+    text-overflow: ellipsis " [..]";
 
-        transform: scalex(5);
+
+        &:hover .slide-check {
+            width: 45%;
+            height: 100%;
+        }
         
-        
-    }
+      
+.menu-card__txt{
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+}
 
     .menu-card__price{
 
@@ -485,27 +503,44 @@ footer ul li {
         align-items: flex-end;
         padding-right: 5%;
 
-        .slide-check{
+       
+
+       
+
+    }
+
+    .slide-check{
 
         background-color: $tertiary;
         display: flex;
         justify-content: center;
         align-items: center;  
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        transform: scalex(0);
-        transition: transform 1s;
-        transform-origin: right 0;
+       
+
+
+
+        height: 100%;
+        width: 0%;
+
+
         
+       
+        transition: 1s;
+    } transition-property: width;
+    transition-duration: 2s;
+
+    .check-ico{
+
+        color: white;
     }
-
-    }
-
-
    
-
-    
 }
+
+
+
+
+
+
 
 
 .loading {
@@ -520,10 +555,8 @@ footer ul li {
   .loading--full-height {
     align-items: center;
     height: 100%;
-
-   
-    
-    
+ 
+      
   }
   
   .loading::after {
