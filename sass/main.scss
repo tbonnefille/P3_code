@@ -5,12 +5,6 @@
 
 
 
-
-
-
-
-
-
 @font-face {  
 
 
@@ -88,18 +82,10 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    
-    
-    
+    align-items: center;       
     background-color: lightgrey;
-    height: 50px;
+    height: 50px;  
     
-
-    
-    
-
-
 
 }
 
@@ -242,6 +228,7 @@ main{
                 border-top-right-radius: 20px;
             
             } 
+            
             .restos-card__body{
             
                 display: flex;
@@ -263,42 +250,30 @@ main{
                 }
                 
                
-              }
+            }
 
 
                .restos-card__heart{
                 
-                display: inline-flex;
+                    display: inline-flex;
                     justify-content: center;
                     align-items: center;
-                    padding: $padding;
-
-                 
-	position: relative;
-  
-  	cursor: pointer;
-
-	
-	transition: all 0.3s ease;  
-
-
-
+                    padding: $padding;               
+                    position: relative;
+                    cursor: pointer;
+                    transition: all 0.3s ease;  
 
 
                     .hearts {
                         position: relative;
-                
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                
-                        
+                                        
                     }
 
                     i {
-                        position: absolute;
-                       
-            
+                        position: absolute;        
                         display: block;
                     }
                       
@@ -313,35 +288,26 @@ main{
                     }
                 
             
-                &:hover {
-                    
-               
-                    .heart2 {
-                        transform: scale(1);
-                        opacity: 1;
-                        color: $primary;
+                    &:hover {
                         
-                    }
-                    .heart1 {
-                        transform: scale(.5);
-                 
-                        opacity: 0;
-                    }
-                }
-            } 
-                   
-
-
-
-
-
-
-
-
                 
-            
-            }
+                        .heart2 {
+                            transform: scale(1);
+                            opacity: 1;
+                            color: $primary;
                             
+                        }
+                        .heart1 {
+                            transform: scale(.5);
+                    
+                            opacity: 0;
+                        }
+                    }
+               }
+
+            } 
+                                        
+                                        
         }
     }
                                 
@@ -453,6 +419,7 @@ footer ul li {
 
 }
 
+
 .menu-title{
 
     margin-bottom: 5px;
@@ -463,38 +430,40 @@ footer ul li {
     background-color: white;
     border-radius: 20px;
     padding-left: 3%;
-
-    height: 100px;
-
+    height: 90px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-bottom: 5%;
     box-shadow:$box-shadow;
-flex-wrap: nowrap;
-
-
+    flex-wrap: nowrap;
     position: relative;
+
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     
-
-    text-overflow: ellipsis " [..]";
-
-
         &:hover .slide-check {
             width: 45%;
             height: 100%;
         }
         
+        &:hover .check-ico{
+            rotate: 1turn;
+        }
       
-.menu-card__txt{
+    .menu-card__txt{
 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+        overflow: hidden;
+        padding-bottom: 5%;
+        width: 90%;
+    }
 
 
-}
+    .menu-card__txt h3{
+
+        margin-bottom: 0%;
+    }
+
 
     .menu-card__price{
 
@@ -503,9 +472,7 @@ flex-wrap: nowrap;
         align-items: flex-end;
         padding-right: 5%;
 
-       
-
-       
+             
 
     }
 
@@ -515,30 +482,21 @@ flex-wrap: nowrap;
         display: flex;
         justify-content: center;
         align-items: center;  
-       
-
-
-
         height: 100%;
         width: 0%;
 
+        transition-property: width;
+        transition-duration: 0.5s;
+    }
 
-        
-       
-        transition: 1s;
-    } transition-property: width;
-    transition-duration: 2s;
 
     .check-ico{
 
         color: white;
+        transition:.5s ease-in-out;
     }
    
 }
-
-
-
-
 
 
 
