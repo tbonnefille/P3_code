@@ -1,31 +1,8 @@
+@use "abstract" as *;
 
-@import'components/buttons';
-
-
-
-
-
-@font-face {  
-
-
-    src:  url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
-
-
-    font-family: 'Roboto', sans-serif;
-
-    font-family: 'Shrikhand', cursive;
-
-
-
-}
-
-
-$primary:#9356DC;
-$secondary:#FF79DA;
-$tertiary:#99E2D0;
-$grey:#f4f4f4;
-$box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.1);
-$padding: 5%;
+@use'components/buttons';
+@use "components/animations.scss" as *;
+@use 'base/typography' ;
 
 
 
@@ -36,15 +13,11 @@ $padding: 5%;
 
 body{
     
-    font-family: 'Roboto', sans-serif;
+    
     background-color: $grey;
 
 }
 
-h1, .shrikhand{
-
-    font-family: 'Shrikhand', cursive;
-}
 
 ul {
     list-style-type: none;
@@ -159,166 +132,171 @@ main{
     height: 300px;
     margin-bottom: 50px;
 
-    
-    .tuto{
+}    
+.tuto{
 
+
+display: flex;
+flex-direction: row;
+height: 28%;
+border-radius: 20px;
+align-items: center;
+background-color: $grey;
+box-shadow: $box-shadow;
+
+&:hover{
+
+    background-color: lighten($color: $primary, $amount: 35);
+    .tuto__ico{color: $primary;}
+}
+
+
+    .tuto__number{
 
         display: flex;
-        flex-direction: row;
-        height: 28%;
-        border-radius: 20px;
+        justify-content: center;
         align-items: center;
-        background-color: $grey;
-        box-shadow: $box-shadow;
-
-        &:hover{
-
-            background-color: lighten($color: $primary, $amount: 35);
-            .tuto__ico{color: $primary;}
+        background-color:$primary ;
+        color: white;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        position: relative;
+        right: 15px;
+                                                        
         }
 
+        .tuto__ico{
 
-        .tuto__number{
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color:$primary ;
-            color: white;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            position: relative;
-            right: 15px;
-                                                           
-            }
-
-            .tuto__ico{
-
-                color: grey;
-                padding: $padding;
-                             
-            }
-
-        .tuto__txt{
-            
-            padding-left: 10px;
+            color: grey;
+            padding: $padding;
+                            
         }
+
+    .tuto__txt{
+        
+        padding-left: 10px;
     }
-
 }
+
+
 
 
 #restos{
 
-    padding: $padding;
+padding: $padding;
 
-    #restos-container{
+}
 
-        display: flex;
-        flex-direction: column;
+
+#restos-container{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.restos-card{
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;        
+    height: 300px;
+    margin-bottom: 5%;
+    box-shadow: $box-shadow;
+
+    .restos-card__img{
+
+    object-fit: cover;
+    height: 80%;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    } 
+
+    .restos-card__body{
     
-        .restos-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
 
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            border-radius: 20px;        
-            height: 300px;
-            margin-bottom: 5%;
-            box-shadow: $box-shadow;
+        .restos-card__title{
+
+            margin-bottom: 0%;
+        }
+                
+        .restos-card__site{
+
+            margin-top: 2%;
+        }
         
-            .restos-card__img{
+        
+    }
 
-                object-fit: cover;
-                height: 80%;
-                overflow: hidden;
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
+
+    .restos-card__heart{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: $padding;               
+        
+        cursor: pointer;
+        transition: all 0.3s ease;  
+
+
+        .hearts {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                                               
+        }
+
+        i {
+            position: absolute;  
+                display: block;
+        }
             
-            } 
+        .heart1 {
+            transition: opacity .3s, transform 1s;
+        }
 
-            .restos-card__body{
+        .heart2 {
+            transition: opacity .3s, transform 1s;
+            transform:  scale(0.5);
+            opacity: 0;
+        }
+    
+
+        &:hover {
             
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                justify-items: center;
-                padding-left: 5%;
-                padding-right: 5%;
-
-                .restos-card__title{
-
-                    margin-bottom: 0%;
-                }
-                     
-                .restos-card__site{
-
-                    margin-top: 2%;
-                }
+    
+            .heart2 {
+                transform: scale(1);
+                opacity: 1;
+                color: $primary;
                 
-               
             }
-
-
-               .restos-card__heart{
-                
-                    display: inline-flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: $padding;               
-                    position: relative;
-                    cursor: pointer;
-                    transition: all 0.3s ease;  
-
-
-                    .hearts {
-                        position: relative;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                                        
-                    }
-
-                    i {
-                        position: absolute;        
-                        display: block;
-                    }
-                      
-                    .heart1 {
-                        transition: opacity .3s, transform 1s;
-                    }
-            
-                    .heart2 {
-                        transition: opacity .3s, transform 1s;
-                        transform:  scale(.5);
-                        opacity: 0;
-                    }
-                
-            
-                    &:hover {
-                        
-                
-                        .heart2 {
-                            transform: scale(1);
-                            opacity: 1;
-                            color: $primary;
-                            
-                        }
-                        .heart1 {
-                            transform: scale(.5);
-                    
-                            opacity: 0;
-                        }
-                    }
-               }
-
-            } 
-                                        
-                                        
+            .heart1 {
+                transform: scale(.5);
+        
+                opacity: 0;
+            }
         }
     }
+
+} 
+                                        
+                                        
+        
+   
                                 
 
 
@@ -378,7 +356,8 @@ footer ul li {
     flex-direction: column;
     background-color: $grey;
     margin-top: 10px;
-    margin-bottom: -70px;
+   margin-bottom: -70px;
+    
 
 
     .title__img{
@@ -398,13 +377,66 @@ footer ul li {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: center;
         background-color: $grey;
         height: 100px;
-               
+        justify-content: space-around;
+        padding-left: 5%;
+
+       
     }
 
+    .title-heart{
+
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: $padding;  
+        
+        .heartsx {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 10px;
+                                   
+        }
+        
+        i {
+            position: absolute;  
+            display: block;
+                
+        }
+    
+    
+        .heart1 {
+            transition: opacity .3s, transform 1s;
+        }
+    
+        .heart2 {
+            transition: opacity .3s, transform 1s;
+            transform:  scale(0.5);
+            opacity: 0;
+        }
+    
+        &:hover{
+         
+            .heart2 {
+                transform: scale(1);
+                opacity: 1;
+                color: $primary;
+                        }
+            .heart1 {
+                transform: scale(.5);
+                opacity: 0;
+            }
+    
+        }
+    
+    
+    }
 }
 
 
@@ -432,7 +464,11 @@ footer ul li {
 .menu-title{
 
     margin-bottom: 5px;
+    font-weight: 100;
 }
+
+
+
 
 .menu-card{
 
@@ -448,8 +484,7 @@ footer ul li {
     position: relative;
 
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    
     
         &:hover .slide-check {
             width: 35%;
@@ -457,7 +492,7 @@ footer ul li {
         }
         
         &:hover .check-ico{
-            rotate: 1turn;
+            rotate: (1turn);
         }
       
     .menu-card__txt{
@@ -471,8 +506,18 @@ footer ul li {
     .menu-card__txt h3{
 
         margin-bottom: 0%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        
     }
 
+    .menu-card__txt p{
+
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
 
     .menu-card__price{
 
@@ -480,7 +525,7 @@ footer ul li {
         justify-content: center;
         align-items: flex-end;
         padding-right: 5%;
-
+        
              
 
     }
@@ -502,7 +547,7 @@ footer ul li {
     .check-ico{
 
         color: white;
-        transition:.5s ease-in-out;
+        transition: 0.5s ease-in-out;
     }
    
 }
@@ -539,33 +584,30 @@ footer ul li {
   
   @keyframes loading {
    
-   from {
+   0% {
       transform: rotate(0turn);
+      opacity: 1;
     }
     
-    to {
-      transform: rotate(1turn);
+    100% {
+      transform: rotate(3turn);
       
     }
 
+   
+    }
 
 
-  }
+
+  
 
 
 
-  @keyframes card-loading{
 
-from{
 
-    opacity: 0;
-    transform: translateY(30px);
-}
 
-to {
 
-    opacity: 1;
-    transform: translateY(0);
-}
 
-}
+
+
+
