@@ -57,7 +57,11 @@
                     <div class="tuto__number">
                         <p>1</p>
                     </div>
-                    <div class="tuto__ico"><i class="fa-solid fa-mobile-screen-button fa-xl"></i></div>
+                    <div class="tuto__ico">
+                        <i class="fa-solid fa-mobile-screen-button fa-xl" id="mobile-ico"></i>
+                        <i class="fa-solid fa-tablet-screen-button fa-2x" id="tablet-ico"></i>
+                        <i class="fa-solid fa-desktop fa-2x" id="desktop-ico"></i>
+                    </div>
                     <div class="tuto__txt">
                         <h3>Choisissez un restaurant</h3>
                     </div>
@@ -92,6 +96,8 @@
 
             <div id="restos-container">
 
+
+            <div class="restos-container__box">
                 <a href="../html/resto1.html">
                     <article class="restos-card">
                         <img class="restos-card__img"
@@ -101,73 +107,7 @@
                                 <h3 class="restos-card__title">La palette du goût</h3>
                                 <p class="restos-card__site">Ménilmontant</p>
                             </div>
-
                             <div class="restos-card__heart">
-                                <div class="hearts">
-                                <i class="heart1 fa-regular fa-heart fa-2x"></i>
-                                <i class="heart2 fa-solid fa-heart fa-2x"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-                </a>
-
-                <a href="../html/resto2.html">
-                    <article class="restos-card">
-                        <img class="restos-card__img" src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
-                        <div class="restos-card__body">
-
-                            <div class="restos-card__txt">
-                                <h3 class="restos-card__title">La note enchantée</h3>
-                                <p class="restos-card__site">Charonne</p>
-                            </div>
-
-                            <div class="restos-card__heart">
-                                <div class="hearts">
-                                <i class="heart1 fa-regular fa-heart fa-2x"></i>
-                                <i class="heart2 fa-solid fa-heart fa-2x"></i>
-                                </div>
-                            </div>
-
-                        </div>
-                    </article>
-                </a>
-
-                <a href="../html/resto3.html">
-                    <article class="restos-card">
-                        <img class="restos-card__img" src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                            alt="">
-
-                        <div class="restos-card__body">
-                            <div class="restos-card__txt">
-                                <h3 class="restos-card__title">À la française</h3>
-                                <p class="restos-card__site">Cité Rouge</p>
-                            </div>
-                            <div class="restos-card__heart">
-
-                                <div class="hearts">
-                                <i class="heart1 fa-regular fa-heart fa-2x"></i>
-                                <i class="heart2 fa-solid fa-heart fa-2x"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-                </a>
-
-                <a href="../html/resto4.html">
-                    <article class="restos-card">
-                        <img class="restos-card__img"
-                            src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
-
-                        <div class="restos-card__body">
-                            <div class="restos-card__txt">
-                                <h3 class="restos-card__title">Le délice des sens</h3>
-                                <p class="restos-card__site">Folie-Méricourt</p>
-                            </div>
-                            <div class="restos-card__heart">
-
                                 <div class="hearts">
                                 <i class="heart1 fa-regular fa-heart fa-2x"></i>
                                 <i class="heart2 fa-solid fa-heart fa-2x"></i>
@@ -176,7 +116,69 @@
                         </div>
                     </article>
                 </a>
+            </div>
 
+                <div class="restos-container__box">
+                    <a href="../html/resto2.html">
+                        <article class="restos-card">
+                      <img class="restos-card__img" src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                            <div class="restos-card__body">
+                                <div class="restos-card__txt">
+                                    <h3 class="restos-card__title">La note enchantée</h3>
+                                    <p class="restos-card__site">Charonne</p>
+                                </div>
+                                <div class="restos-card__heart">
+                                    <div class="hearts">
+                                    <i class="heart1 fa-regular fa-heart fa-2x"></i>
+                                    <i class="heart2 fa-solid fa-heart fa-2x"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+
+                <div class="restos-container__box">
+                    <a href="../html/resto3.html">
+                        <article class="restos-card">
+                            <img class="restos-card__img" src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                alt="">
+                            <div class="restos-card__body">
+                                <div class="restos-card__txt">
+                                    <h3 class="restos-card__title">À la française</h3>
+                                    <p class="restos-card__site">Cité Rouge</p>
+                                </div>
+                                <div class="restos-card__heart">
+                                    <div class="hearts">
+                                    <i class="heart1 fa-regular fa-heart fa-2x"></i>
+                                    <i class="heart2 fa-solid fa-heart fa-2x"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+
+                <div class="restos-container__box">
+                    <a href="../html/resto4.html">
+                        <article class="restos-card">
+                            <img class="restos-card__img"
+                                src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                            <div class="restos-card__body">
+                                <div class="restos-card__txt">
+                                    <h3 class="restos-card__title">Le délice des sens</h3>
+                                    <p class="restos-card__site">Folie-Méricourt</p>
+                                </div>
+                                <div class="restos-card__heart">
+                                    <div class="hearts">
+                                    <i class="heart1 fa-regular fa-heart fa-2x"></i>
+                                    <i class="heart2 fa-solid fa-heart fa-2x"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
             </div>
 
         </section>

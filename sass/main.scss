@@ -1,8 +1,9 @@
-@use "abstract" as *;
+@use "abstracts" as *;
 
 @use'components/buttons';
 @use "components/animations.scss" as *;
 @use 'base/typography' ;
+@use 'layout/footer.scss';
 
 
 
@@ -35,7 +36,6 @@ header{
     background-color: white;
 }
 
-
 .logo{
 
     display: flex;
@@ -43,9 +43,20 @@ header{
     align-items: center;
     height: 60px;
     
-    padding: $padding;
+    
    
+    @include tablet {
 
+        transform : scale(2);
+        /*align-items: flex-end;*/
+        padding: 0%;
+    }
+
+    @include desktop {
+
+        transform : scale(2.5);
+        padding: 4%;
+    }
 }
 
 .logo-txt{
@@ -84,9 +95,7 @@ header{
 input[type=text] {
     width: 100%;
     padding: 12px;
-    padding-left: 0px;
-    
-   
+    padding-left: 0px;  
     border: none;
   }
 
@@ -113,6 +122,10 @@ main{
     margin-bottom: 10%;
     padding: $padding;
     
+    @include tablet{
+
+        margin-bottom: 0%;
+    }
 }
 
 
@@ -120,21 +133,38 @@ main{
 
     background-color: white;
     padding: $padding;
+   
+    @include tablet{
 
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
 }
 
 
 #tuto-container{
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 300px;
-    margin-bottom: 50px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 300px;
+margin-bottom: 50px;
+
+    @include tablet{
+
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 2%;
+    }
+
+    @include desktop{
+
+        padding-left: 25%;
+        padding-right: 25%;
+    }
 
 }    
 .tuto{
-
 
 display: flex;
 flex-direction: row;
@@ -143,6 +173,8 @@ border-radius: 20px;
 align-items: center;
 background-color: $grey;
 box-shadow: $box-shadow;
+
+
 
 &:hover{
 
@@ -156,13 +188,19 @@ box-shadow: $box-shadow;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color:$primary ;
+        background-color:$primary;
         color: white;
         width: 25px;
         height: 25px;
         border-radius: 50%;
         position: relative;
         right: 15px;
+
+        @include tablet{
+
+            width: 35px;
+            height: 35px;
+        }
                                                         
         }
 
@@ -173,18 +211,78 @@ box-shadow: $box-shadow;
                             
         }
 
+        #mobile-ico{
+
+            display: contents;
+
+            @include tablet{
+
+                display: none;
+            }
+
+           
+        }
+
+        #tablet-ico {
+
+            display: none;
+
+            @include tablet{
+
+                display: contents;
+            }
+
+            @include desktop{
+
+                display: none;
+            }
+        }
+
+        #desktop-ico{
+
+            display: none;
+
+            @include tablet{
+
+                display: none;
+            }
+
+            @include desktop{
+
+                display: contents;
+            }
+        }
+
+
     .tuto__txt{
         
         padding-left: 10px;
+
+        @include tablet{
+
+            padding-left: 10%;
+            padding-right: 5%;
+        }
+
+        @include desktop{
+
+            
+            padding-left: 15%;
+            padding-right: 10%;
+        }
+        
     }
 }
-
-
 
 
 #restos{
 
 padding: $padding;
+
+    @include tablet{
+
+        padding: 2%;
+    }
 
 }
 
@@ -194,7 +292,31 @@ padding: $padding;
     display: flex;
     flex-direction: column;
 
+    @include tablet{
+
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       
+    }
+
+    @include desktop{
+
+        flex-wrap: nowrap;
+    }
 }
+
+.restos-container__box{
+    
+    @include tablet{
+
+        width: 44%;
+    }
+
+    @include desktop{
+
+        width: 23%;
+    }
 
 .restos-card{
 
@@ -203,16 +325,31 @@ padding: $padding;
     flex-direction: column;
     border-radius: 20px;        
     height: 300px;
+    width: 100%;
     margin-bottom: 5%;
     box-shadow: $box-shadow;
+
+    @include desktop{
+
+        height: 500px;
+        justify-content: flex-end
+    }
+         
+    }
 
     .restos-card__img{
 
     object-fit: cover;
     height: 80%;
+    width: 100%;
     overflow: hidden;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+
+    @include desktop{
+
+        height: 90%;
+    }
 
     } 
 
@@ -246,7 +383,6 @@ padding: $padding;
         justify-content: center;
         align-items: center;
         padding: $padding;               
-        
         cursor: pointer;
         transition: all 0.3s ease;  
 
@@ -261,7 +397,7 @@ padding: $padding;
 
         i {
             position: absolute;  
-                display: block;
+            display: block;
         }
             
         .heart1 {
@@ -293,49 +429,13 @@ padding: $padding;
     }
 
 } 
-                                        
-                                        
-        
-   
-                                
-
-
-footer{
-
-    background-color: #393e41;
-    color: white;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-bottom: 20px;
-}
-
-
-footer a{
-
-    color: white;
-}
-
-footer ul{
-
-    padding-left: 5%;
-    margin: 0%;
-}
-
-footer ul li {
-    margin-bottom: 5px;
-}
-
-.foot-ul__li{
-
-    padding-right: 10px;
-}
+                                                      
+                                         
 
 .banner{
 
     text-align: center;
-    height: 50px;
+    height: 60px;
 }
 
 .index-arrow{
@@ -348,6 +448,7 @@ footer ul li {
     position: absolute;
     top: 5px;
     left: 5px;
+    z-index: 1;
 }
 
 .title__card{
@@ -357,6 +458,12 @@ footer ul li {
     background-color: $grey;
     margin-top: 10px;
    margin-bottom: -70px;
+
+   @include tablet{
+
+    padding-left: 10%;
+    padding-right: 10%;
+   }
     
 
 
@@ -364,7 +471,16 @@ footer ul li {
 
     object-fit: cover;
     height: 300px;
-      
+
+    @include tablet{
+
+        height: 400px;
+    }
+    
+    @include desktop{
+
+        height: 500px;
+    }
     }
 
 
@@ -393,7 +509,8 @@ footer ul li {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: $padding;  
+        padding: $padding;
+        cursor: pointer;  
         
         .heartsx {
             position: relative;
@@ -444,6 +561,14 @@ footer ul li {
 
     padding: 3%;
     animation: card-loading 4s;
+
+@include tablet{
+
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 0%;
+}
+
 }
 
 .shortline{
@@ -456,8 +581,12 @@ footer ul li {
     position: absolute;
     left: 0;
     right: 85%;
-    }
 
+        @include tablet{
+
+        right: 90%;    
+        }
+    }
 }
 
 
@@ -466,9 +595,6 @@ footer ul li {
     margin-bottom: 5px;
     font-weight: 100;
 }
-
-
-
 
 .menu-card{
 
@@ -482,17 +608,20 @@ footer ul li {
     box-shadow:$box-shadow;
     flex-wrap: nowrap;
     position: relative;
-
     overflow: hidden;
-    
-    
+    cursor: pointer;
+           
         &:hover .slide-check {
-            width: 35%;
+            width: 30%;
             height: 100%;
+
+            @include tablet{
+                width: 20%;
+            }
         }
         
         &:hover .check-ico{
-            rotate: (1turn);
+            transform: rotate(1turn);
         }
       
     .menu-card__txt{
@@ -525,9 +654,7 @@ footer ul li {
         justify-content: center;
         align-items: flex-end;
         padding-right: 5%;
-        
-             
-
+                     
     }
 
     .slide-check{
@@ -553,7 +680,7 @@ footer ul li {
 }
 
 
-
+/*
 
 .loading {
     display: flex;
@@ -597,7 +724,7 @@ footer ul li {
    
     }
 
-
+*/
 
   
 

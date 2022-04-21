@@ -1,0 +1,31 @@
+
+footer{
+
+    background-color: #393e41;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+}
+
+footer a{
+
+    color: white;
+}
+
+footer ul{
+
+    padding-left: 5%;
+    margin: 0%;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+.foot-ul__li{
+
+    padding-right: 10px;
+}
