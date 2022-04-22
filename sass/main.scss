@@ -1,28 +1,20 @@
 @use "abstracts" as *;
-
 @use'components/buttons';
-@use "components/animations.scss" as *;
-@use 'base/typography' ;
+@use "components/animations.scss";
+@use 'base/typography';
 @use 'layout/footer.scss';
-
-
-
-
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
-    
-    
+body {
     background-color: $grey;
-
 }
-
 
 ul {
     list-style-type: none;
 }
+
 a:link {
     text-decoration: none;
 }
@@ -31,415 +23,293 @@ a {
     color: black;
 }
 
-header{
-
+header {
     background-color: white;
 }
 
-.logo{
-
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
     
-    
-   
+
     @include tablet {
-
-        transform : scale(2);
-        /*align-items: flex-end;*/
-        padding: 0%;
-    }
-
-    @include desktop {
-
-        transform : scale(2.5);
+        transform: scale(1.5);
+      
         padding: 4%;
+    }
+    @include desktop {
+        transform: scale(1.5);
+        padding: 3%;
+       
     }
 }
 
-.logo-txt{
-
+.logo-txt {
     margin: 0%;
     padding: 5%;
 }
 
-.logo-img{
-
-    height: 30px;
+.logo-img {
+    height: 40px;
+    
 }
-
 
 #city {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;       
+    align-items: center;
     background-color: lightgrey;
-    height: 50px;  
+    height: 50px;
     
-
 }
 
 #posico {
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-left: 50px;
-           
 }
 
 input[type=text] {
     width: 100%;
     padding: 12px;
-    padding-left: 0px;  
+    padding-left: 0px;
     border: none;
-  }
-
-
-#input-txt {
-   
-    height: 50px;
-    width: 200px;
-   background-color:lightgrey;
-
 }
 
+#input-txt {
+    height: 50px;
+    width: 200px;
+    background-color: lightgrey;
+}
 
-main{
-
+main {
     margin-bottom: 50px;
 }
 
-
-
-#explorer{
-
+#explorer {
     text-align: center;
     margin-bottom: 10%;
     padding: $padding;
-    
-    @include tablet{
-
+    @include tablet {
         margin-bottom: 0%;
     }
 }
 
-
-#fonction{
-
+#fonction {
     background-color: white;
     padding: $padding;
-   
-    @include tablet{
-
+    @include tablet {
         padding-top: 2%;
         padding-bottom: 2%;
     }
 }
 
-
-#tuto-container{
-
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-height: 300px;
-margin-bottom: 50px;
-
-    @include tablet{
-
+#tuto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    margin-bottom: 50px;
+    @include tablet {
         padding-left: 15%;
         padding-right: 15%;
         padding-top: 2%;
     }
-
-    @include desktop{
-
+    @include desktop {
         padding-left: 25%;
         padding-right: 25%;
     }
-
-}    
-.tuto{
-
-display: flex;
-flex-direction: row;
-height: 28%;
-border-radius: 20px;
-align-items: center;
-background-color: $grey;
-box-shadow: $box-shadow;
-
-
-
-&:hover{
-
-    background-color: lighten($color: $primary, $amount: 35);
-    .tuto__ico{color: $primary;}
 }
 
-
-    .tuto__number{
-
+.tuto {
+    display: flex;
+    flex-direction: row;
+    height: 28%;
+    border-radius: 20px;
+    align-items: center;
+    background-color: $grey;
+    box-shadow: $box-shadow;
+    &:hover {
+        background-color: lighten($color: $primary, $amount: 35);
+        .tuto__ico {
+            color: $primary;
+        }
+    }
+    .tuto__number {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color:$primary;
+        background-color: $primary;
         color: white;
         width: 25px;
         height: 25px;
         border-radius: 50%;
         position: relative;
         right: 15px;
-
-        @include tablet{
-
+        @include tablet {
             width: 35px;
             height: 35px;
         }
-                                                        
+    }
+    .tuto__ico {
+        color: grey;
+        padding: $padding;
+    }
+    #mobile-ico {
+        display: contents;
+        @include tablet {
+            display: none;
         }
-
-        .tuto__ico{
-
-            color: grey;
-            padding: $padding;
-                            
-        }
-
-        #mobile-ico{
-
+    }
+    #tablet-ico {
+        display: none;
+        @include tablet {
             display: contents;
-
-            @include tablet{
-
-                display: none;
-            }
-
-           
         }
-
-        #tablet-ico {
-
+        @include desktop {
             display: none;
-
-            @include tablet{
-
-                display: contents;
-            }
-
-            @include desktop{
-
-                display: none;
-            }
         }
-
-        #desktop-ico{
-
+    }
+    #desktop-ico {
+        display: none;
+        @include tablet {
             display: none;
-
-            @include tablet{
-
-                display: none;
-            }
-
-            @include desktop{
-
-                display: contents;
-            }
         }
-
-
-    .tuto__txt{
-        
+        @include desktop {
+            display: contents;
+        }
+    }
+    .tuto__txt {
         padding-left: 10px;
-
-        @include tablet{
-
+        @include tablet {
             padding-left: 10%;
             padding-right: 5%;
         }
-
-        @include desktop{
-
-            
+        @include desktop {
             padding-left: 15%;
             padding-right: 10%;
         }
-        
     }
 }
 
-
-#restos{
-
-padding: $padding;
-
-    @include tablet{
-
+#restos {
+    padding: $padding;
+    @include tablet {
         padding: 2%;
     }
-
 }
 
-
-#restos-container{
-
+#restos-container {
     display: flex;
     flex-direction: column;
-
-    @include tablet{
-
-       flex-direction: row;
-       flex-wrap: wrap;
-       justify-content: space-around;
-       
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
-
-    @include desktop{
-
+    @include desktop {
         flex-wrap: nowrap;
     }
 }
 
-.restos-container__box{
-    
-    @include tablet{
-
+.restos-container__box {
+    @include tablet {
         width: 44%;
     }
-
-    @include desktop{
-
+    @include desktop {
         width: 23%;
     }
-
-.restos-card{
-
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;        
-    height: 300px;
-    width: 100%;
-    margin-bottom: 5%;
-    box-shadow: $box-shadow;
-
-    @include desktop{
-
-        height: 500px;
-        justify-content: flex-end
+    .restos-card {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        height: 300px;
+        width: 100%;
+        margin-bottom: 5%;
+        box-shadow: $box-shadow;
+        @include desktop {
+            height: 500px;
+            justify-content: flex-end
+        }
     }
-         
+    .restos-card__img {
+        object-fit: cover;
+        height: 80%;
+        width: 100%;
+        overflow: hidden;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        @include desktop {
+            height: 90%;
+        }
     }
-
-    .restos-card__img{
-
-    object-fit: cover;
-    height: 80%;
-    width: 100%;
-    overflow: hidden;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-
-    @include desktop{
-
-        height: 90%;
-    }
-
-    } 
-
-    .restos-card__body{
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-
-        .restos-card__title{
-
+    .restos-card__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        .restos-card__title {
             margin-bottom: 0%;
         }
-                
-        .restos-card__site{
-
+        .restos-card__site {
             margin-top: 2%;
         }
-        
-        
     }
-
-
-    .restos-card__heart{
-    
+    .restos-card__heart {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: $padding;               
+        padding: $padding;
         cursor: pointer;
-        transition: all 0.3s ease;  
-
-
+        transition: all 0.3s ease;
         .hearts {
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
-                                               
         }
-
         i {
-            position: absolute;  
+            position: absolute;
             display: block;
         }
-            
         .heart1 {
             transition: opacity .3s, transform 1s;
         }
-
         .heart2 {
             transition: opacity .3s, transform 1s;
-            transform:  scale(0.5);
+            transform: scale(0.5);
             opacity: 0;
         }
-    
 
         &:hover {
-            
-    
             .heart2 {
                 transform: scale(1);
                 opacity: 1;
                 color: $primary;
-                
             }
             .heart1 {
                 transform: scale(.5);
-        
                 opacity: 0;
             }
         }
     }
+}
 
-} 
-                                                      
-                                         
-
-.banner{
-
+.banner {
     text-align: center;
     height: 60px;
 }
 
-.index-arrow{
-    
+.index-arrow {
     width: 50px;
     height: 50px;
     display: flex;
@@ -451,41 +321,30 @@ padding: $padding;
     z-index: 1;
 }
 
-.title__card{
-
+.title__card {
     display: flex;
     flex-direction: column;
     background-color: $grey;
     margin-top: 10px;
-   margin-bottom: -70px;
-
-   @include tablet{
-
-    padding-left: 10%;
-    padding-right: 10%;
-   }
-    
-
-
-    .title__img{
-
-    object-fit: cover;
-    height: 300px;
-
-    @include tablet{
-
-        height: 400px;
+    margin-bottom: -70px;
+    @include tablet {
+        padding-left: 10%;
+        padding-right: 10%;
     }
-    
-    @include desktop{
+    .title__img {
+        object-fit: cover;
+        height: 300px;
 
-        height: 500px;
+        @include tablet {
+            height: 400px;
+            margin-top: 2%;
+        }
+
+        @include desktop {
+            height: 500px;
+        }
     }
-    }
-
-
-    .title__body{
-
+    .title__body {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         position: relative;
@@ -499,105 +358,76 @@ padding: $padding;
         height: 100px;
         justify-content: space-around;
         padding-left: 5%;
-
-       
     }
-
-    .title-heart{
-
-    
+    .title-heart {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: $padding;
-        cursor: pointer;  
-        
+        cursor: pointer;
         .heartsx {
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             padding-right: 10px;
-                                   
         }
-        
         i {
-            position: absolute;  
+            position: absolute;
             display: block;
-                
         }
-    
-    
         .heart1 {
             transition: opacity .3s, transform 1s;
         }
-    
         .heart2 {
             transition: opacity .3s, transform 1s;
-            transform:  scale(0.5);
+            transform: scale(0.5);
             opacity: 0;
         }
-    
-        &:hover{
-         
+        &:hover {
             .heart2 {
                 transform: scale(1);
                 opacity: 1;
                 color: $primary;
-                        }
+            }
             .heart1 {
                 transform: scale(.5);
                 opacity: 0;
             }
-    
         }
-    
-    
     }
 }
 
-
-.carte{
-
+.carte {
     padding: 3%;
     animation: card-loading 4s;
-
-@include tablet{
-
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 0%;
+    @include tablet {
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 0%;
+    }
 }
 
-}
-
-.shortline{
+.shortline {
     position: relative;
     margin-bottom: 30px;
-
-    .shortline__line{
-
-    border-bottom: 4px solid $tertiary;
-    position: absolute;
-    left: 0;
-    right: 85%;
-
-        @include tablet{
-
-        right: 90%;    
+    .shortline__line {
+        border-bottom: 4px solid $tertiary;
+        position: absolute;
+        left: 0;
+        right: 85%;
+        @include tablet {
+            right: 90%;
         }
     }
 }
 
-
-.menu-title{
-
+.menu-title {
     margin-bottom: 5px;
     font-weight: 100;
 }
 
-.menu-card{
-
+.menu-card {
     background-color: white;
     border-radius: 20px;
     padding-left: 3%;
@@ -605,136 +435,63 @@ padding: $padding;
     display: flex;
     flex-direction: row;
     margin-bottom: 5%;
-    box-shadow:$box-shadow;
+    box-shadow: $box-shadow;
     flex-wrap: nowrap;
     position: relative;
     overflow: hidden;
     cursor: pointer;
-           
-        &:hover .slide-check {
-            width: 30%;
-            height: 100%;
-
-            @include tablet{
-                width: 20%;
-            }
+    &:hover .slide-check {
+        width: 30%;
+        height: 100%;
+        @include tablet {
+            width: 20%;
         }
-        
-        &:hover .check-ico{
-            transform: rotate(1turn);
-        }
-      
-    .menu-card__txt{
-
+    }
+    &:hover .check-ico {
+        transform: rotate(1turn);
+    }
+    .menu-card__txt {
         overflow: hidden;
         padding-bottom: 5%;
         width: 90%;
     }
-
-
-    .menu-card__txt h3{
-
+    .menu-card__txt h3 {
         margin-bottom: 0%;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
-        
     }
-
-    .menu-card__txt p{
-
+    .menu-card__txt p {
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
     }
-
-    .menu-card__price{
-
+    .menu-card__price {
         display: flex;
         justify-content: center;
         align-items: flex-end;
         padding-right: 5%;
-                     
     }
-
-    .slide-check{
-
+    .slide-check {
         background-color: $tertiary;
         display: flex;
         justify-content: center;
-        align-items: center;  
+        align-items: center;
         height: 100%;
         width: 0%;
-
         transition-property: width;
         transition-duration: 0.5s;
     }
-
-
-    .check-ico{
-
+    .check-ico {
         color: white;
         transition: 0.5s ease-in-out;
     }
-   
 }
 
 
-/*
 
-.loading {
-    display: flex;
-    justify-content: center;
 
- position: absolute;
-    top: 50%;
-    left: 30%;
-  }
-  
-  .loading--full-height {
-    align-items: center;
-    height: 100%;
- 
-      
-  }
-  
-  .loading::after {
-    content: "";
-    width: 150px;
-    height: 150px;
-    border: 10px solid $secondary;
-    border-top-color: $tertiary;
-    border-radius: 50%;
-    transform: rotate(0.16turn);
-    animation: loading 1s ease infinite;
-  }
-  
-  @keyframes loading {
-   
-   0% {
-      transform: rotate(0turn);
-      opacity: 1;
-    }
     
-    100% {
-      transform: rotate(3turn);
-      
-    }
-
-   
-    }
-
-*/
-
-  
-
-
-
-
-
-
-
-
 
 
 
