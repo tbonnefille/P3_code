@@ -1,11 +1,9 @@
 //breakpoints
 
 @mixin tablet {
-    @media (min-width: 768px) { @content; }
+    @media (min-width: 688px) { @content; }
   }
   @mixin desktop {
-    @media (min-width: 1366px) { @content; }
+    @media (min-width: 992px) { @content; }
   }
-  @mixin desktop-hd {
-    @media (min-width: 1920px) { @content; }
-  }
+ 

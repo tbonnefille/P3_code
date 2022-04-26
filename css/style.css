@@ -145,13 +145,13 @@ header {
   align-items: center;
   height: 60px;
 }
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   .logo {
     transform: scale(1.5);
     padding: 4%;
   }
 }
-@media (min-width: 1366px) {
+@media (min-width: 992px) {
   .logo {
     padding: 3%;
   }
@@ -200,7 +200,7 @@ main {
   margin-bottom: 50px;
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 992px) {
   #explorer {
     display: flex;
     flex-direction: row;
@@ -215,12 +215,12 @@ main {
   margin-bottom: 10%;
   padding: 5%;
 }
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   #explorer-box {
     margin-bottom: 0%;
   }
 }
-@media (min-width: 1366px) {
+@media (min-width: 992px) {
   #explorer-box {
     width: 47%;
   }
@@ -229,7 +229,7 @@ main {
 #gmap-box {
   display: none;
 }
-@media (min-width: 1366px) {
+@media (min-width: 992px) {
   #gmap-box {
     width: 47%;
     display: flex;
@@ -246,7 +246,7 @@ main {
   background-color: white;
   padding: 5%;
 }
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   #fonction {
     padding-top: 2%;
     padding-bottom: 2%;
@@ -260,14 +260,14 @@ main {
   height: 300px;
   margin-bottom: 50px;
 }
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   #tuto-container {
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 2%;
   }
 }
-@media (min-width: 1366px) {
+@media (min-width: 992px) {
   #tuto-container {
     padding-left: 25%;
     padding-right: 25%;
@@ -301,7 +301,7 @@ main {
   position: relative;
   right: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   .tuto .tuto__number {
     width: 35px;
     height: 35px;
@@ -314,7 +314,7 @@ main {
 .tuto #mobile-ico {
   display: contents;
 }
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   .tuto #mobile-ico {
     display: none;
   }
@@ -322,12 +322,12 @@ main {
 .tuto #tablet-ico {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   .tuto #tablet-ico {
     display: contents;
   }
 }
-@media (min-width: 1366px) {
+@media (min-width: 992px) {
   .tuto #tablet-ico {
     display: none;
   }
@@ -335,12 +335,12 @@ main {
 .tuto #desktop-ico {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   .tuto #desktop-ico {
     display: none;
   }
 }
-@media (min-width: 1366px) {
+@media (min-width: 992px) {
   .tuto #desktop-ico {
     display: contents;
   }
@@ -348,13 +348,13 @@ main {
 .tuto .tuto__txt {
   padding-left: 10px;
 }
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   .tuto .tuto__txt {
     padding-left: 10%;
     padding-right: 5%;
   }
 }
-@media (min-width: 1366px) {
+@media (min-width: 992px) {
   .tuto .tuto__txt {
     padding-left: 15%;
     padding-right: 10%;
@@ -364,7 +364,7 @@ main {
 #restos {
   padding: 5%;
 }
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   #restos {
     padding: 2%;
   }
@@ -374,25 +374,25 @@ main {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   #restos-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 }
-@media (min-width: 1366px) {
+@media (min-width: 992px) {
   #restos-container {
     flex-wrap: nowrap;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   .restos-container__box {
     width: 44%;
   }
 }
-@media (min-width: 1366px) {
+@media (min-width: 992px) {
   .restos-container__box {
     width: 23%;
   }
@@ -407,7 +407,7 @@ main {
   margin-bottom: 5%;
   box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.1);
 }
-@media (min-width: 1366px) {
+@media (min-width: 992px) {
   .restos-container__box .restos-card {
     height: 500px;
     justify-content: flex-end;
@@ -421,7 +421,7 @@ main {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-@media (min-width: 1366px) {
+@media (min-width: 992px) {
   .restos-container__box .restos-card__img {
     height: 90%;
   }
@@ -501,7 +501,7 @@ main {
   margin-top: 10px;
   margin-bottom: -70px;
 }
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   .title__card {
     padding-left: 10%;
     padding-right: 10%;
@@ -511,13 +511,13 @@ main {
   object-fit: cover;
   height: 300px;
 }
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   .title__card .title__img {
     height: 400px;
     margin-top: 2%;
   }
 }
-@media (min-width: 1366px) {
+@media (min-width: 992px) {
   .title__card .title__img {
     height: 500px;
   }
@@ -534,7 +534,7 @@ main {
   align-items: center;
   background-color: #f4f4f4;
   height: 100px;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-left: 5%;
 }
 .title__card .title-heart {
@@ -577,7 +577,7 @@ main {
   padding: 3%;
   animation: card-loading 4s;
 }
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   .carte {
     padding-left: 20%;
     padding-right: 20%;
@@ -595,7 +595,7 @@ main {
   left: 0;
   right: 85%;
 }
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   .shortline .shortline__line {
     right: 90%;
   }
@@ -624,7 +624,7 @@ main {
   width: 30%;
   height: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 688px) {
   .menu-card:hover .slide-check {
     width: 20%;
   }
