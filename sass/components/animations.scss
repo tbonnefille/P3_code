@@ -10,8 +10,8 @@
    bottom:0;
   
    
-  animation: hideLoader 3500ms 1 forwards;
-  animation-delay: 1500ms;
+  animation: hideLoader 5s 1 forwards;
+  
   
 }
       
@@ -28,6 +28,13 @@
   
 @keyframes hideLoader
 {
+
+  0%{
+
+    opacity: 1;
+    z-index: 99;
+    
+  }
   100%
   {
     opacity: 0;

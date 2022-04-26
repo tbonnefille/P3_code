@@ -1,2 +1,7 @@
 @forward "variables";
 @forward "mixins";
+
+@forward  "../base/typography";
+@forward "../layout/footer.scss";
+@forward "../components/animations.scss";
+@forward "../components/buttons";
