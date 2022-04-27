@@ -8,9 +8,10 @@
    left:0;
    right:0;
    bottom:0;
+   opacity: 0;
   
    
-  animation: hideLoader 5s 1 forwards;
+  animation: hideLoader 5s 0.25s forwards;
   
   
 }
@@ -32,16 +33,28 @@
   0%{
 
     opacity: 1;
-    z-index: 99;
+    z-index: 100000;
     
   }
+
+
+  99%
+  {
+   
+    z-index: 100000;
+    
+  }
+
+
+
   100%
   {
+
     opacity: 0;
-    display: none;
-    z-index: -99;
+    z-index: -100000;
   }
 }
+
 
 @keyframes spin
 {

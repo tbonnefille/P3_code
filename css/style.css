@@ -50,7 +50,8 @@ footer ul li {
   left: 0;
   right: 0;
   bottom: 0;
-  animation: hideLoader 5s 1 forwards;
+  opacity: 0;
+  animation: hideLoader 5s 0.25s forwards;
 }
 
 .loading-spinner::after {
@@ -67,12 +68,14 @@ footer ul li {
 @keyframes hideLoader {
   0% {
     opacity: 1;
-    z-index: 99;
+    z-index: 100000;
+  }
+  99% {
+    z-index: 100000;
   }
   100% {
     opacity: 0;
-    display: none;
-    z-index: -99;
+    z-index: -100000;
   }
 }
 @keyframes spin {
@@ -228,6 +231,7 @@ main {
 
 #gmap-box {
   display: none;
+  z-index: 1;
 }
 @media (min-width: 992px) {
   #gmap-box {

@@ -127,6 +127,7 @@ main {
 #gmap-box{
 
     display: none;
+    z-index: 1;
 
 @include desktop{
 

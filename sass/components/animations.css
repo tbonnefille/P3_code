@@ -1,0 +1,98 @@
+.loading-spinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-animation: hideLoader 5s 0.25s forwards;
+          animation: hideLoader 5s 0.25s forwards;
+}
+
+.loading-spinner::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  border: 10px solid #FF79DA;
+  border-top-color: #99E2D0;
+  border-radius: 50%;
+  -webkit-transform: rotate(0.16turn);
+          transform: rotate(0.16turn);
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes hideLoader {
+  0% {
+    opacity: 1;
+    z-index: 100000;
+  }
+  99% {
+    z-index: 100000;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100000;
+  }
+}
+
+@keyframes hideLoader {
+  0% {
+    opacity: 1;
+    z-index: 100000;
+  }
+  99% {
+    z-index: 100000;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100000;
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes card-loading {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes card-loading {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=animations.css.map */
