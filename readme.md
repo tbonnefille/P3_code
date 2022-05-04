@@ -25,16 +25,16 @@ Vous pouvez vérifier la version de Sass en tapant : sass --version
 7. Vous pouvez lancez vos scripts en les inscrivant dans le fichier package.json. Le script de ce projet est:
 
 {
-"name": "writting-sass",
-"version": "1.0.0",
-"description": "",
-"main": "index.js",
-"scripts": {
-  "sass": ""
-},
-"author": "",
-"license": "ISC",
-}
+  "name": "writting-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+  }
 
 Ce script permet de compiler les informations codées dans le fichier main.scss vers le fichier style.css
 
